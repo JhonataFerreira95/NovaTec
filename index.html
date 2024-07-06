@@ -3,27 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restaurante JS</title>
+  <title>NovaTec JS</title>
 </head>
 <body>
   
-  <h1>Lan house JS</h1>
+  <h1>Farmacia JS</h1>
 
 <form>
 
-  <p>Tempo de uso por 15Min R$:
-    <input type="number" id="inValor" min="0" step="0.01" required>
+  <p>Medicamento:
+    <input type="text" id="inMed" required>
   </p>
 
-  <p>Tempo de uso do cliente:
-    <input type="number" id="inTempo" min="0" required>
+  <p>Preço R$:
+    <input type="number" id="inPrice" min="0" step="0.01" required>
   </p>
 
-  <input type="submit" value="Valor a pagar R$: ">
+  <input type="submit" value="Mostra promoção R$: ">
 
 </form>
 
-<h3></h3>
+<h3 id="outResp1"></h3>
+<h3 id="outResp2"></h3>
 <script src="cap2.js"></script>
 </body>
 </html>

@@ -1,19 +1,16 @@
-// cria referência aos elementos da página 
-const frm = document.querySelector("form")
-const resp1 = document.querySelector("#outMedicamento")
-const resp2 = document.querySelector("#outPromocao")
+const form = document.querySelector("form")
+const resp1 = document.querySelector("#outResp1")
+const resp2 = document.querySelector("#outResp2")
 
-// cria um "ouvinte" de evento, acionado quando o botão submit for clicado
-frm.addEventListener("submit", (e) => {
-  // obtém conteúdo dos campos de entrada
-  const medicamento = frm.inMedicamento.value
-  const preco = Number(frm.inPreco.value)
+form.addEventListener("submit", (e) =>{
+    const frm = form.inMed.value
+    const price = Number(form.inPrice.value)
 
-  // calcula valor da promoção (arredonda para baixo)
-  const promocao = Math.floor(preco * 2)
+    const promo = Math.floor(price * 2)
 
-  // exibe as respostas
-  resp1.innerText = `Promoção de ${medicamento}`
-  resp2.innerText = `Leve 2 por apenas R$: ${promocao.toFixed(2)}`
-  e.preventDefault()                // evita envio do form
+    resp1.innerText = `Promoção de ${frm}`
+    resp2.innerText = `Leve 2 por apenas R$: ${promo.toFixed(2)}`
+
+    e.preventDefault()
+
 })
