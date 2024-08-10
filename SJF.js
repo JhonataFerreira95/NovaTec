@@ -1,3 +1,6 @@
+// OBS: Para se executar é necessário ter o node instalado na máquina, logo que abrir o termina digite `node SJF.js`
+
+
 const readline = require('readline');
 
 const rl = readline.createInterface({
